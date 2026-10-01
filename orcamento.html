@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orçamento - Movínea Móveis</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="topo"><div class="logo">MOVÍNEA MÓVEIS</div>
+<nav><a href="index.html">Início</a><a href="projetos.html">Projetos</a><a href="orcamento.html">Solicite um orçamento</a></nav></header>
+<section class="hero" style="min-height:260px"><img src="images/cozinha-hero.jpg" alt="Cozinha planejada" style="filter:none"></section>
+<section class="secao"><h2 style="margin-bottom:24px">5 ideias para uma cozinha mais funcional</h2><div class="dica"><div><h3>1. Aproveite o espaço vertical</h3><p>Armários superiores e nichos ajudam a utilizar áreas que muitas vezes ficam subaproveitadas.</p></div><img src="images/cozinha-1.jpg" alt=""></div><div class="dica"><div><h3>2. Pense na rotina</h3><p>A posição de gavetas, armários e bancadas pode facilitar muito o preparo das refeições e a organização dos utensílios.</p></div><img src="images/cozinha-2.jpg" alt=""></div><div class="dica"><div><h3>3. Aposte em cantos</h3><p>Espaços que parecem difíceis de utilizar podem receber soluções planejadas para aumentar o nível de armazenamento.</p></div><img src="images/cozinha-3.jpg" alt=""></div><div class="dica"><div><h3>4. Organize por frequência de uso</h3><p>Deixe os objetos utilizados diariamente em locais de fácil acesso e reserve áreas menos acessíveis para itens usados com menor frequência.</p></div><img src="images/cozinha-4.jpg" alt=""></div><div class="dica"><div><h3>5. Escolha revestimentos que combinem com o ambiente</h3><p>Cores, texturas e materiais ajudam a criar uma cozinha que seja bonita e fiel à personalidade de quem utiliza o espaço.</p></div><img src="images/cozinha-5.jpg" alt=""></div></section>
+<section class="dep"><h2>DEPOIMENTOS</h2>
+<p style="margin-top:8px">A satisfação de quem já confiou na Movínea é parte importante do nosso trabalho.</p>
+<div class="cols">
+<div class="card"><p>Sem palavras pro trabalho da Movinea. Tirou literalmente meu sonho do papel. Assim como havia planejado a anos atrás ele fez o projeto da minha cozinha nova. Super indico, entrega e montagem dentro do prazo. Qualidade dos armários top. Obrigado Carlos com toda certeza te indico de olhos fechados.</p><strong>Joyce Letícia Marques</strong></div>
+<div class="card"><p>Fizemos um móvel com a Movinea Móveis Planejados, fomos bem atendidos e o resultado do móvel superou totalmente nossas expectativas. Do jeitinho que imaginávamos. Recomendo muito, projeto e produto de altíssima qualidade.</p><strong>Rafael Candido</strong></div></div></section>
+<section class="orc"><h2>Faça seu orçamento! Se tiver alguma dúvida, é só nos contar!</h2>
+<form id="f"><input id="nome" type="text" placeholder="Seu nome" required><input id="contato" type="text" placeholder="Seu e-mail ou telefone" required><textarea id="msg" placeholder="Escreva aqui detalhes como você imagina seu espaço..." required></textarea><button type="submit">Enviar</button></form></section>
+<script>
+// Cole aqui o link que o Google Apps Script gerar (passo a passo no chat)
+var URL_PLANILHA = "COLE_AQUI_O_LINK_DO_APPS_SCRIPT";
+document.getElementById('f').addEventListener('submit', function(e){
+  e.preventDefault();
+  if (URL_PLANILHA.indexOf("COLE_AQUI") === 0) { alert("Falta colar o link da planilha no código."); return; }
+  var dados = new URLSearchParams({nome: nome.value, contato: contato.value, mensagem: msg.value});
+  fetch(URL_PLANILHA, {method: "POST", body: dados, mode: "no-cors"})
+    .then(function(){ document.getElementById('f').reset(); alert("Mensagem enviada! Em breve entraremos em contato."); })
+    .catch(function(){ alert("Não foi possível enviar. Tente novamente."); });
+});
+</script>
+<footer class="rodape"><div class="in"><p class="redes">Nossas redes</p>
+<div class="icones"><a href="https://www.facebook.com/movineamoveisplanejados/?locale=pt_BR" target="_blank" aria-label="Facebook">f</a><a href="https://www.instagram.com/movineamoveis" target="_blank" aria-label="Instagram">◎</a><a href="https://wa.me/5511974470209" target="_blank" aria-label="WhatsApp">☏</a></div>
+<div class="cols-rodape"><div><h4>Sobre nós</h4><ul><li>(11) 97447-0209</li><li>Rua Miguel Prisco, 501</li><li>Ribeirão Pires - SP</li></ul></div>
+<div><h4>Explorar</h4><ul><li><a href="index.html">Início</a></li><li><a href="projetos.html">Projetos e Galeria</a></li><li><a href="orcamento.html">Faça um Orçamento</a></li></ul></div></div></div></footer></body></html>
