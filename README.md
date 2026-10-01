@@ -20,6 +20,6 @@ Projeto acadêmico (PIM) do curso de Análise e Desenvolvimento de Sistemas - Un
 - GitHub Pages (hospedagem)
 
 ## Autor
-[Seu nome] - [seu RA ou turma, se quiser]
+Sara Quintão - 2622316
 
 Os dados de contato e as fotos pertencem à loja e foram usados com autorização.
