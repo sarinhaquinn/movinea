@@ -15,8 +15,8 @@
 <section class="orc"><h2>Faça seu orçamento! Se tiver alguma dúvida, é só nos contar!</h2>
 <form id="f"><input id="nome" type="text" placeholder="Seu nome" required><input id="contato" type="text" placeholder="Seu e-mail ou telefone" required><textarea id="msg" placeholder="Escreva aqui detalhes como você imagina seu espaço..." required></textarea><button type="submit">Enviar</button></form></section>
 <script>
-// Cole aqui o link que o Google Apps Script gerar (passo a passo no chat)
-var URL_PLANILHA = "COLE_AQUI_O_LINK_DO_APPS_SCRIPT";
+
+var URL_PLANILHA = "https://script.google.com/macros/s/AKfycbxjxdi63sN9C2qs0n-tYUHXnc57rvDH5mVNX7y3gyvjSbNgRVI78T0H-DrpXamCLjwO/exec";
 document.getElementById('f').addEventListener('submit', function(e){
   e.preventDefault();
   if (URL_PLANILHA.indexOf("COLE_AQUI") === 0) { alert("Falta colar o link da planilha no código."); return; }
