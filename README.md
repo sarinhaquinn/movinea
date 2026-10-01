@@ -6,7 +6,7 @@ Site institucional da Movínea Móveis, loja de móveis planejados. Projeto de P
 Site institucional de uma loja de móveis planejados de Ribeirão Pires - SP.
 Projeto acadêmico (PIM) do curso de Análise e Desenvolvimento de Sistemas - Unip EAD.
 
-🔗 Site no ar: https://[seu-usuario].github.io/movinea/
+🔗 Site no ar: https://sarinhaquinn.github.io/movinea/
 
 ## Páginas
 - **Início**: apresentação da loja e diferenciais
